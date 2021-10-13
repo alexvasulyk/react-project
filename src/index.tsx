@@ -7,6 +7,7 @@ import Menu from './ui/boot/router/'
 
 ReactDOM.render(
   <React.StrictMode>
+    // Тут не добре, бо в тебе App буде показуватися завжди не зналежно від навігації (Залишив комент як це виправити у файлі router)
     <App />
     <Menu />
   </React.StrictMode>,
