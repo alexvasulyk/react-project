@@ -7,7 +7,6 @@ import Menu from './ui/boot/router/'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
     <Menu />
   </React.StrictMode>,
   document.getElementById('root')
