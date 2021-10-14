@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import {
     BrowserRouter as Router,
     Switch,
@@ -8,17 +8,15 @@ import {
   import Home from '../../pages/home/Home';
   import Profile from '../../pages/profile/Profile';
 
-export default class index extends Component {
-    render() {
-        return (
-            <div>
-                <Router>
+
+export default function Index() {
+    return (
+        <Router>
                     <div>
                         <nav>
-                            <ul>
-                                <li><Link to='/Home'>Home</Link></li>
-                                <li><Link to='/Profile'>Profile</Link></li>
-                            </ul>
+                        <Link to='/Home'>Home</Link>
+                        <Link to='/Profile'>Profile</Link>
+                            
                         </nav>
                         <Switch>
                             <Route path='/Home'>
@@ -30,8 +28,8 @@ export default class index extends Component {
                         </Switch>
                     </div>
                 </Router>
-            </div>
-        )
-    }
+    )
 }
+
+
 
